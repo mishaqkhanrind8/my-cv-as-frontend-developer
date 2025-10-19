@@ -5,6 +5,19 @@
     scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .profile-name {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.9;
+}
+
+
 div.wrapper {
     padding: 20px;
     display: flex;
@@ -13,6 +26,32 @@ div.wrapper {
 aside {
     width: 30%;
     padding: 20px;
+}
+
+.profile-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px; /* optional size control */
+  overflow: hidden;
+  border-radius: 15px; /* optional styling */
+}
+
+.profile-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.profile-name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6); /* readable on any background */
 }
 
 .profile-container {
@@ -177,4 +216,17 @@ aside {
 
 .footer .credit a:hover {
   color: #e0f7f5;
+}
+
+
+@media (max-width: 768px) {
+    div.wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
 }
