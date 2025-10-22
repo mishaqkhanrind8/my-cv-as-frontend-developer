@@ -32,9 +32,10 @@ aside {
   position: relative;
   display: inline-block;
   width: 100%;
-  max-width: 400px; /* optional size control */
+  max-width: 400px;
   overflow: hidden;
-  border-radius: 15px; /* optional styling */
+  border-radius: 15px;
+  margin-bottom: 1rem;
 }
 
 .profile-img img {
